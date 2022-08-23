@@ -1,0 +1,251 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+div, p, input, button, form, span, a, ul, li {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+/*HEADER*/
+
+header {
+    background: rgba(185, 133, 89, 1.0);
+    background: -webkit-radial-gradient(bottom right, rgba(185, 133, 89, 1.0), rgba(36, 30, 68, 1.0));
+    background: -moz-radial-gradient(bottom right, rgba(185, 133, 89, 1.0), rgba(36, 30, 68, 1.0));
+    background: radial-gradient(to top left, rgba(185, 133, 89, 1.0), rgba(36, 30, 68, 1.0));
+    color: #fff;
+    padding: 25% 0;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    font-size: 14vw;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    /*text-align: center;*/
+}
+.text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5vw;
+    padding: 0;
+    /*margin: 0 auto;*/
+    margin-top: 15%;
+    width: 67%;
+    /*text-align: center;*/
+}
+
+/*MOMENTS*/
+
+.sort {
+    color: #000;
+    font-size: 4vw;
+    margin-top: 10%;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.moments {
+    margin-bottom: 10%;
+}
+.wrapper {
+    display: flex;
+    margin-top: 10%;
+}
+.offer {
+    color: #000;
+}
+/*Картинка справа*/
+.date {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 6vw;
+    margin: 0;
+    width: 90%;
+}
+.block-text {
+    font-size: 4vw;
+    margin: 0;
+    margin-top: 7%;
+    width: 90%;
+}
+.img {
+    width: 50%;
+    height: 100%;
+}
+/*Картинка слева*/
+.img-left {
+    width: 50%;
+    height: 100%;
+    margin-right: 5%;
+}
+.date-left {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 6vw;
+    margin: 0;
+    margin-right: 0;
+}
+.block-text-left {
+    font-size: 4vw;
+    margin: 0;
+    margin-top: 7%;
+    margin-right: 0;
+}
+
+/* CONGRATS */
+
+.congrats {
+    background: #403249;
+    padding: 10% 0;
+}
+.congrats-text {
+    font-size: 4.5vw;
+    margin: 0;
+    line-height: 1.5em;
+}
+
+/*ADAPTIVE*/
+
+/*576px - 768px*/
+@media screen and (min-width: 576px) {
+    header {
+        padding: 144px 0;
+    }
+    .container {
+        width: 540px;
+    }
+    .title {
+        font-size: 80.5px;
+    }
+    .text {
+        font-size: 28.75px;
+        width: 346.72px;
+        margin-top: 81px;
+    }
+    .moments {
+        margin-bottom: 54px;
+    }
+    .wrapper {
+        max-width: 520px;
+        margin: 0 auto;
+        margin-top: 54px;
+    }
+    .date, .date-left {
+        font-size: 34.5px;
+    }
+    .block-text, .block-text-left {
+        font-size: 23px;
+    }
+    .congrats-text {
+        font-size: 25.8px;
+    }
+    .congrats {
+        padding: 57.5px 0;
+    }
+}
+
+/*768px - 992px*/
+@media screen and (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+    .title {
+        font-size: 85px;
+    }
+    .text {
+        font-size: 30px;
+        width: 377px;
+    }
+    .wrapper {
+        margin: 0 auto;
+        margin-top: 54px;
+    }
+    .flex {
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
+
+/*992px - 1200px*/
+@media screen and (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+    .flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .wrapper {
+        max-width: 465px;
+        margin: 0;
+        margin-top: 30px;
+    }
+    .date, .date-left {
+        font-size: 31px;
+    }
+    .block-text, .block-text-left {
+        font-size: 20px;
+    }
+    .congrats-text {
+        font-size: 25.8px;
+    }
+    .congrats {
+        padding: 57.5px 0;
+    }
+}
+
+/*1200px - 1400px*/
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+    .flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .wrapper {
+        margin-top: 60px;
+        max-width: 540px;
+    }
+    .moments {
+        margin-bottom: 60px;
+    }
+     .title {
+        font-size: 95px;
+    }
+    .text {
+        font-size: 35px;
+        width: 580px;
+    }
+    .date, .date-left {
+        font-size: 34.5px;
+    }
+    .block-text, .block-text-left {
+        font-size: 23px;
+    }
+    .congrats-text {
+        font-size: 25.8px;
+    }
+    .congrats {
+        padding: 57.5px 0;
+    }
+}
