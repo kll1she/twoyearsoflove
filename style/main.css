@@ -55,11 +55,36 @@ header {
 .sort {
     color: #000;
     font-size: 4vw;
-    margin-top: 10%;
+    margin-top: 3%;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+}
+.hidden {
+    display: flex;
+}
+.filter {
+    color: #A9A9A9;
+    text-decoration: underline;
+    font-size: 4vw;
+    margin: 0;
+    margin-top: 3%;
+}
+.sort-button {
+    background: #fff;
+    width: 100%;
+    padding: 3% 0;
+    font-size: 4vw;
+    margin: 0 auto;
+    border-radius: 50px;
+    margin-top: 3%;
 }
 .flex {
     display: flex;
     flex-direction: column;
+}
+.sort-function {
+    flex-direction: column-reverse;
 }
 .moments {
     margin-bottom: 10%;
@@ -159,6 +184,21 @@ header {
     .congrats {
         padding: 57.5px 0;
     }
+    .sort-button {
+        width: 518px;
+        height: 63px;
+        padding: 16px 0;
+        font-size: 24px;
+        margin-top: 16px;
+    }
+    .sort {
+        margin-top: 16px;
+    }
+    .filter {
+        font-size: 24px;
+        margin-top: 16px;
+        margin-left: 10px;
+    }
 }
 
 /*768px - 992px*/
@@ -180,6 +220,9 @@ header {
     .flex {
         margin: 0 auto;
         justify-content: center;
+    }
+    .filter {
+        margin-left: 100px;
     }
 }
 
@@ -209,6 +252,12 @@ header {
     }
     .congrats {
         padding: 57.5px 0;
+    }
+    .sort {
+        display: none;
+    }
+    .filter {
+        display: none;
     }
 }
 

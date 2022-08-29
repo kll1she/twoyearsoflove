@@ -1,27 +1,22 @@
-document.querySelector('#q1').onclick = mySort;
-document.querySelector('#q1').onclick = mySortDesc;
+// Сортировка
+var q1 = document.querySelector('#q1');
+var q2 = document.querySelector('#q2');
+var flex = document.querySelector('.flex');
 
-function mySort() {
-	let rad = document.querySelector('.flex');
-	for (let i = 0; i < rad.children.length; i++) {
-		if (+rad.children[i].getAttribute('cost') > +rad.children[j].getAttribute('cost')) {
-			replacedNode = rad.replaceChild(rad.children[j], rad.children[i]);
-			insertAfter(replacedNode, rad.children[i]);
-		}
+q1.onclick = function () {
+	if (flex.classList.contains('sort-function')) {
+		flex.classList.remove('sort-function');
 	}
 }
 
-function mySort() {
-	let rad = document.querySelector('.flex');
-	for (let i = 0; i < rad.children.length; i++) {
-		if (+rad.children[i].getAttribute('cost') < +rad.children[j].getAttribute('cost')) {
-			replacedNode = rad.replaceChild(rad.children[j], rad.children[i]);
-			insertAfter(replacedNode, rad.children[i]);
-		}
-	}
+q2.onclick = function () {
+	flex.classList.add('sort-function');
 }
 
+// Кнопка фильтр
+var filter = document.querySelector('.filter');
+var sort_button = document.querySelector('.sort');
 
-function insertAfter(elem, refElem){
-	return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
+filter.onclick = function () {
+	sort_button.classList.toggle('hidden');
 }
